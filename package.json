@@ -42,27 +42,7 @@
     "core-js": "2.6.0",
     "zen-observable": "0.8.11"
   },
-  "devDependencies": {
-    "@babel/core": "7.2.0",
-    "@babel/plugin-proposal-class-properties": "7.2.1",
-    "@babel/plugin-transform-runtime": "7.2.0",
-    "@babel/preset-env": "7.2.0",
-    "@babel/preset-flow": "7.0.0",
-    "flow-bin": "0.89.0",
-    "flow-copy-source": "2.0.2",
-    "flow-typed": "2.5.1",
-    "globby": "8.0.1",
-    "husky": "1.2.0",
-    "lerna": "3.6.0",
-    "lint-staged": "8.1.0",
-    "pascal-case": "2.0.1",
-    "pkg-to-readme": "1.1.0",
-    "prettier": "1.15.3",
-    "rollup": "0.67.4",
-    "rollup-plugin-babel": "4.1.0",
-    "rollup-plugin-commonjs": "9.2.0",
-    "rollup-plugin-node-resolve": "4.0.0"
-  },
+  "devDependencies": {},
   "peerDependencies": {
     "phoenix": "^1.4.0"
   }
