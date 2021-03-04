@@ -52,8 +52,11 @@ const notifierOnConnectionClose = absintheSocket => notifier => {
   }
 };
 
-const onConnectionClose = absintheSocket => () =>
-  absintheSocket.notifiers.forEach(notifierOnConnectionClose(absintheSocket));
+const onConnectionClose = absintheSocket => () => {
+  const notifiers = absintheSocket.notifiers
+  return notifiers.forEach(notifierOnConnectionClose(absintheSocket));
+}
+
 
 const shouldJoinChannel = absintheSocket =>
   !absintheSocket.channelJoinCreated && absintheSocket.notifiers.length > 0;

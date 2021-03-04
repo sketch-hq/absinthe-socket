@@ -7,7 +7,7 @@ import type {AbsintheSocket} from "./types";
 import type {Notifier, Observer} from "./notifier/types";
 
 const doUnobserveOrCancel = (absintheSocket, notifier, observer) =>
-  notifier.activeObservers.length === 1
+  notifier.activeObservers.length <= 1
     ? cancel(absintheSocket, notifier)
     : unobserve(absintheSocket, notifier, observer);
 
