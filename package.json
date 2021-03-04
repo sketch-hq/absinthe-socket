@@ -11,10 +11,9 @@
     "prebuild:flow": "npm run build:flow:copy-source dist",
     "build:flow": "npm run build:flow:copy-source compat/cjs",
     "prebuild:src:bundle": "npm run build:src:clean",
-    "build:src:bundle": "./node_modules/rollup -c ./rollup.config.js",
+    "build:src:bundle": "./node_modules/.bin/rollup -c ./rollup.config.js",
     "postbuild:src:bundle": "npm run build:flow",
-    "build:src:clean": "rm -rfv dist compat",
-    "prepack": "npm run build:src:bundle"
+    "build:src:clean": "rm -rfv dist compat"
   },
   "repository": {
     "type": "git",
